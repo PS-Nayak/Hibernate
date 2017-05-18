@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.invenger.hibernate.Dto.ApplicationConfigDto" table="Application_Config">
+		<cache usage="read-only" />
+	<id name="id" type="int" column="ID">
+		</id>
+		<property name="App_Name" column="App_Name" type="string" />
+		<property name="Param_Name" column="Param_Name" type="string" />
+		<property name="Param_Value" column="Param_Value" type="string" />
+		<property name="Active_YN" column="Active_YN" type="string" />
+		<property name="Created_By" column="Created_By" type="string" />
+		<property name="Created_Date" column="Created_Date" type="date" />
+		<property name="Updated_By" column="Updated_By" type="string" />
+		<property name="Updated_Date" column="Updated_Date" type="date" />
+
+	</class>
+</hibernate-mapping>
